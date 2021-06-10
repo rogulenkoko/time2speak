@@ -70,6 +70,10 @@
     return elem.offset().top + elem.outerHeight() >= $window.scrollTop() && elem.offset().top <= $window.scrollTop() + $window.height();
   }
 
+  $("request-call").submit(function() {
+    console.log("есть коннект")
+});  
+
   /**
    * @desc Calls a function when element has been scrolled into the view
    * @param {object} element - jQuery object

@@ -141,7 +141,7 @@
                       <h4 class="text-uppercase font-weight-sbold wow fadeIn">Заказать звонок</h4><span class="icon mdi icon-sm linearicons-pencil3"></span>
                     </div>
                     <!-- RD Mailform-->
-                    <form class="rd-form rd-mailform form-lg" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                    <form id="request-call" class="rd-form rd-mailform form-lg" data-form-output="form-output-global" data-form-type="contact">
                       <div class="form-wrap form-wrap-icon wow fadeIn" data-wow-delay=".05s">
                         <label class="form-label form-label-outside" for="contact-1-name">Имя</label>
                         <input class="form-input" id="contact-1-name" type="text" name="name" data-constraints="@Required">
@@ -157,6 +157,16 @@
                       </div>
                     </form>
                   </div>
+                  <!-- <div class="col-md-6 col-lg-12">
+                    <h5 class="text-uppercase wow fadeIn">Lots of Happy Students</h5>
+                    <p class="text-gray-500 mt-30 wow fadeIn" data-wow-delay=".05s">We have over 4 thousand students</p>
+                    <ul class="list-number mt-15 mt-md-30">
+                      <li class="wow fadeIn" data-wow-delay=".1s">5</li>
+                      <li class="wow fadeIn" data-wow-delay=".15s">2</li>
+                      <li class="wow fadeIn" data-wow-delay=".2s">3</li>
+                      <li class="wow fadeIn" data-wow-delay=".25s">5</li>
+                    </ul>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -333,7 +343,7 @@
                         </div>
                         <div class="lg-2-item-main">
                           <h3 class="font-weight-regular lg-2-item-title">Быстрый результат</h3>
-                          <p>Получайте быстрые и гарантированные результаты с лучшими преподаввателями.</p>
+                          <p>Получайте быстрые и гарантированные результаты с лучшими преподавателями.</p>
                         </div>
                       </article>
                     </li>
@@ -355,7 +365,7 @@
                         </div>
                         <div class="lg-2-item-main">
                           <h3 class="font-weight-regular lg-2-item-title">Поддержка</h3>
-                          <p>Наш персонал и преподаватели всегда готовы прийти к вам на помощь.</p>
+                          <p>Наш персонал и преподаватели всегда готовы прийти к Вам на помощь.</p>
                         </div>
                       </article>
                     </li>
@@ -597,6 +607,7 @@
       </footer>
     </div>
     <div class="snackbars" id="form-output-global"></div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
   </body>
