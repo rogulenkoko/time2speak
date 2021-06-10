@@ -2137,6 +2137,10 @@ p + .list-marked {
 	}
 }
 
+.list-pricing{
+	min-width: 250px;
+}
+
 .list-pricing a {
 	display: flex;
 	flex-wrap: wrap;
@@ -2172,6 +2176,7 @@ p + .list-marked {
 .list-pricing .list-pricing-title {
 	font-weight: 400;
 	color: #000000;
+	min-width: 175px;
 }
 
 .list-pricing > li + li {
@@ -6373,6 +6378,11 @@ button.quote-light-avatar.active {
 }
 
 @media (min-width: 768px) {
+
+	.tour-classic {
+		min-height: 400px;
+	}
+
 	.tour-classic-pricing {
 		left: 30px;
 	}
@@ -6388,12 +6398,21 @@ button.quote-light-avatar.active {
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+	.tour-classic {
+		min-height: 400px;
+	}
+
 	.tour-classic-footer {
 		font-size: 17px;
 	}
 }
 
 @media (min-width: 992px) {
+
+	.tour-classic {
+		min-height: 400px;
+	}
+
 	html:not(.tablet):not(.mobile) .tour-classic-figure::before {
 		content: '';
 		position: absolute;
@@ -6417,6 +6436,11 @@ button.quote-light-avatar.active {
 }
 
 @media (min-width: 1200px) {
+
+	.tour-classic {
+		min-height: 400px;
+	}
+
 	.tour-classic-price-old {
 		font-size: 18px;
 	}
@@ -10512,6 +10536,7 @@ html.tablet .ui-to-top {
 	font-family: "Material Design Icons";
 	font-size: 16px;
 	cursor: pointer;
+	color: white;
 }
 
 .rd-navbar-static .rd-nav-item > .rd-navbar-submenu-toggle::before {
@@ -10519,10 +10544,11 @@ html.tablet .ui-to-top {
 	display: inline-block;
 	transition: .22s;
 	content: '\f236';
+	color: white;
 }
 
 .rd-navbar-static .rd-nav-item > .rd-navbar-submenu-toggle:hover {
-	color: #1cde60;
+	color: white;
 }
 
 .rd-navbar-static .rd-nav-item > .rd-navbar-submenu {
@@ -11302,7 +11328,9 @@ html.rd-navbar-fixed-linked .rd-navbar-wrap {
 	margin-top: 1px;
 	right: 0;
 	padding: 10px;
-	background: #1cde60;
+	/* background: #1cde60; */
+	background: rgba(0, 0, 0, 0.2);
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -11419,6 +11447,7 @@ html.rd-navbar-fixed-linked .rd-navbar-wrap {
 	letter-spacing: .05em;
 	text-transform: uppercase;
 	color: #000000;
+	color: white;
 }
 
 .rd-navbar-creative.rd-navbar-static .rd-navbar-brand img {
@@ -11460,6 +11489,8 @@ html.rd-navbar-fixed-linked .rd-navbar-wrap {
 	padding-right: 20px;
 	margin-top: 1px;
 	background: #1cde60;
+	background: rgba(0, 0, 0, 0.2);
+
 	opacity: 0;
 	visibility: hidden;
 	transition: opacity .5s, visibility .5s, transform .5s;
