@@ -70,9 +70,7 @@
     return elem.offset().top + elem.outerHeight() >= $window.scrollTop() && elem.offset().top <= $window.scrollTop() + $window.height();
   }
 
-  $("request-call").submit(function() {
-    console.log("есть коннект")
-});  
+  
 
   /**
    * @desc Calls a function when element has been scrolled into the view
@@ -119,8 +117,55 @@
 					plugins.preloader.addClass('loaded');
 					windowReady = true;
 				}
-			});
-		}
+      });
+    }
+      $("#request-call").submit(function() {
+
+        let name = $('#contact-1-name').val();
+        let phone = $('#contact-1-phone').val();
+        Email.send({
+          Host : "smtp.gmail.com",
+          Username : "time2speak.mog@gmail.com",
+          Password : "pervomayskaya505",
+          To : 'time2speak.mog@gmail.com',
+          From : "time2speak.mog@gmail.com",
+          Subject : "time2speak - ученик",
+          Body : "Ученик " + name + " просит связаться по телефону " + phone
+        }).then(
+          
+        );
+        });  
+
+        $("#request-message").submit(function() {
+
+          let name = $('#contact-name').val();
+          let email = $('#contact-email').val();
+          let message = $('#contact-message').val();
+          Email.send({
+            Host : "smtp.gmail.com",
+            Username : "time2speak.mog@gmail.com",
+            Password : "pervomayskaya505",
+            To : 'time2speak.mog@gmail.com',
+            From : "time2speak.mog@gmail.com",
+            Subject : "time2speak - ученик",
+            Body : "Ученик " + name + " просит связаться по почте " + email + " . Так же он оставил сообщение: " + message 
+          }).then(
+            
+          );
+          }); 
+
+        // Email.send({
+        //   SecureToken : "e0c4e2f9-e473-4414-b1d8-d2cab989832e",
+        //   To : 'time2speak.mog@gmail.com',
+        //   From : "time2speak.mog@gmail.com",
+        //   Subject : "time2speak - ученик",
+        //   Body : "Ученик просит связаться"
+        // }).then(
+        //   message => alert(message)
+        // );
+        // });  
+    
+
 
     // jQuery Count To
     if (plugins.counter.length) {
@@ -1410,10 +1455,10 @@
     }
 
     // RD Mailform
-    if (plugins.rdMailForm.length) {
+    if (plugins.rdMailForm.length) { //plugins.rdMailForm.length
       var i, j, k,
         msg = {
-          'MF000': 'Successfully sent!',
+          'MF000': 'Мы с вами свяжемся!',
           'MF001': 'Recipients are not set!',
           'MF002': 'Form will not work locally!',
           'MF003': 'Please, define email field in your form!',
@@ -1524,7 +1569,7 @@
               grecaptcha.reset();
             }
 
-            result = result.length === 5 ? result : 'MF255';
+            result = result.length === 5 ? result : 'MF000';
             output.text(msg[result]);
 
             if (result === "MF000") {
