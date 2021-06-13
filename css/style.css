@@ -2137,8 +2137,12 @@ p + .list-marked {
 	}
 }
 
+.footer-classic-item-block-3{
+	min-width: 300px !important;
+}
+
 .list-pricing{
-	min-width: 250px;
+	min-width: 300px !important;
 }
 
 .list-pricing a {
@@ -2176,7 +2180,7 @@ p + .list-marked {
 .list-pricing .list-pricing-title {
 	font-weight: 400;
 	color: #000000;
-	min-width: 175px;
+	min-width: 195px;
 }
 
 .list-pricing > li + li {
@@ -2249,6 +2253,7 @@ img {
 	font-style: normal;
 	speak: none;
 	text-transform: none;
+	color: white;
 }
 
 .icon-circle {
@@ -5565,10 +5570,6 @@ button.quote-light-avatar.active {
 
 .footer-classic-layout > * {
 	margin-bottom: 45px;
-}
-
-.footer-classic-item-block-3 {
-	max-width: 240px;
 }
 
 .footer-classic-title {
@@ -11395,7 +11396,7 @@ html.rd-navbar-fixed-linked .rd-navbar-wrap {
 .rd-navbar-creative.rd-navbar-static .rd-navbar-toggle-element span, .rd-navbar-creative.rd-navbar-static .rd-navbar-toggle-element span::before, .rd-navbar-creative.rd-navbar-static .rd-navbar-toggle-element span::after {
 	width: 38px;
 	height: 2px;
-	background-color: #000000;
+	background-color: #ffffff;
 	border-radius: 0;
 }
 
@@ -11428,14 +11429,19 @@ html.rd-navbar-fixed-linked .rd-navbar-wrap {
 .rd-navbar-creative.rd-navbar-static .rd-navbar-toggle-element.active span::before, .rd-navbar-creative.rd-navbar-static .rd-navbar-toggle-element.active span::after {
 	top: 0;
 	transition-delay: 0s, 0.3s;
+	background-color: white;
 }
 
 .rd-navbar-creative.rd-navbar-static .rd-navbar-toggle-element.active span::before {
 	transform: rotate(45deg);
+	background-color: white;
+
 }
 
 .rd-navbar-creative.rd-navbar-static .rd-navbar-toggle-element.active span::after {
 	transform: rotate(-45deg);
+	background-color: white;
+
 }
 
 .rd-navbar-creative.rd-navbar-static .rd-navbar-toggle-text {
@@ -11520,7 +11526,7 @@ html.rd-navbar-fixed-linked .rd-navbar-wrap {
 }
 
 .rd-navbar-creative.rd-navbar-static .rd-nav-link::after {
-	background: #000000;
+	background: #ffffff;
 }
 
 .rd-navbar-creative.rd-navbar-static .rd-navbar-submenu-toggle {

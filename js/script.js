@@ -123,6 +123,33 @@
 
         let name = $('#contact-1-name').val();
         let phone = $('#contact-1-phone').val();
+        sendEmail("Ученик " + name + " просит связаться по телефону " + phone);
+      });  
+
+      $("#request-call-courses").submit(function() {
+
+        let name = $('#contact-2-name').val();
+        let phone = $('#contact-2-phone').val();
+        sendEmail("Ученик " + name + " просит связаться по телефону " + phone);
+      }); 
+
+      $("#request-message").submit(function() {
+
+        let name = $('#contact-name').val();
+        let email = $('#contact-email').val();
+        let message = $('#contact-message').val();
+        sendEmail("Ученик " + name + " просит связаться по почте " + email + " . Так же он оставил сообщение: " + message);
+      }); 
+
+      $("#request-message-team").submit(function() {
+
+        let name = $('#contact-name').val();
+        let email = $('#contact-email').val();
+        let message = $('#contact-message').val();
+        sendEmail("Ученик " + name + " просит связаться по почте " + email + " . Так же он оставил сообщение: " + message);
+      }); 
+
+      function sendEmail(body){
         Email.send({
           Host : "smtp.gmail.com",
           Username : "time2speak.mog@gmail.com",
@@ -130,29 +157,9 @@
           To : 'time2speak.mog@gmail.com',
           From : "time2speak.mog@gmail.com",
           Subject : "time2speak - ученик",
-          Body : "Ученик " + name + " просит связаться по телефону " + phone
-        }).then(
-          
-        );
-        });  
-
-        $("#request-message").submit(function() {
-
-          let name = $('#contact-name').val();
-          let email = $('#contact-email').val();
-          let message = $('#contact-message').val();
-          Email.send({
-            Host : "smtp.gmail.com",
-            Username : "time2speak.mog@gmail.com",
-            Password : "pervomayskaya505",
-            To : 'time2speak.mog@gmail.com',
-            From : "time2speak.mog@gmail.com",
-            Subject : "time2speak - ученик",
-            Body : "Ученик " + name + " просит связаться по почте " + email + " . Так же он оставил сообщение: " + message 
-          }).then(
-            
-          );
-          }); 
+          Body : body,
+        }).then();
+      }
 
         // Email.send({
         //   SecureToken : "e0c4e2f9-e473-4414-b1d8-d2cab989832e",
