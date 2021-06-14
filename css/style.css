@@ -5957,6 +5957,7 @@ button.quote-light-avatar.active {
 	font-weight: 400;
 	color: rgba(0, 0, 0, 0.4);
 	letter-spacing: .03em;
+	font-size: 18px;
 }
 
 .profile-classic-name {
