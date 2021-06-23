@@ -5957,7 +5957,7 @@ button.quote-light-avatar.active {
 	font-weight: 400;
 	color: rgba(0, 0, 0, 0.4);
 	letter-spacing: .03em;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .profile-classic-name {
@@ -6327,6 +6327,14 @@ button.quote-light-avatar.active {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+}
+
+.tour-classic-info {
+	padding-top: 40px;
+}
+
+.tour-classic-info-2{
+	padding-top: 10px;
 }
 
 .tour-classic-footer span {
@@ -9271,7 +9279,7 @@ html [class*='section-'].section-bottom-0 {
 }
 
 .bg-tertiary {
-	background-color: #FF004C;
+	background-color: #4bf190;
 }
 
 .bg-tertiary:not([style*="background-"]) + .bg-tertiary:not([style*="background-"]) {
@@ -9279,7 +9287,7 @@ html [class*='section-'].section-bottom-0 {
 }
 
 .bg-box-1 {
-	background-color: #3FCD6F;
+	background-color: #1cde60;
 }
 
 .bg-box-1:not([style*="background-"]) + .bg-box-1:not([style*="background-"]) {
