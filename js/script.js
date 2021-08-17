@@ -123,6 +123,11 @@
 
         let name = $('#contact-1-name').val();
         let phone = $('#contact-1-phone').val();
+
+        if(!name || !phone){
+          return;
+        }
+
         sendEmail("Ученик " + name + " просит связаться по телефону " + phone);
       });  
 
@@ -130,6 +135,11 @@
 
         let name = $('#contact-2-name').val();
         let phone = $('#contact-2-phone').val();
+
+        if(!name || !phone){
+          return;
+        }
+
         sendEmail("Ученик " + name + " просит связаться по телефону " + phone);
       }); 
 
@@ -138,6 +148,11 @@
         let name = $('#contact-name').val();
         let email = $('#contact-email').val();
         let message = $('#contact-message').val();
+
+        if(!name || !email){
+          return;
+        }
+
         sendEmail("Ученик " + name + " просит связаться по почте " + email + " . Так же он оставил сообщение: " + message);
       }); 
 
@@ -146,6 +161,11 @@
         let name = $('#contact-name').val();
         let email = $('#contact-email').val();
         let message = $('#contact-message').val();
+
+        if(!name || !email){
+          return;
+        }
+
         sendEmail("Ученик " + name + " просит связаться по почте " + email + " . Так же он оставил сообщение: " + message);
       }); 
 
@@ -162,7 +182,7 @@
       }
 
         // Email.send({
-        //   SecureToken : "e0c4e2f9-e473-4414-b1d8-d2cab989832e",
+        //   SecureToken : "06579596-51b9-42ba-b13e-71bac515a3b9",
         //   To : 'time2speak.mog@gmail.com',
         //   From : "time2speak.mog@gmail.com",
         //   Subject : "time2speak - ученик",
