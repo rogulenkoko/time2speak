@@ -6330,11 +6330,7 @@ button.quote-light-avatar.active {
 }
 
 .tour-classic-info {
-	padding-top: 40px;
-}
-
-.tour-classic-info-2{
-	padding-top: 10px;
+	padding-top: 20px;
 }
 
 .tour-classic-footer span {
@@ -6405,6 +6401,18 @@ button.quote-light-avatar.active {
 	.tour-classic-body {
 		padding: 34px 20px 20px 25px;
 	}
+	.tour-classic-info-empty {
+		height: 62px;
+		padding-top: 20px;
+	}	
+
+	.tour-classic-caption-high {
+		min-height: 56px;
+	}
+
+	.teacher-description-high {
+		min-height: 63px;
+	}
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -6440,6 +6448,12 @@ button.quote-light-avatar.active {
 		opacity: 1;
 		visibility: visible;
 	}
+
+	html:not(.tablet):not(.mobile) .tour-classic-info-empty {
+		height: 66px;
+		padding-top: 20px;
+	}	
+
 	.tour-classic-caption {
 		color: #000000;
 	}
